@@ -1,0 +1,30 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.masonry-grid{
+	/* fluid 3 columns */
+	@include transition-duration(.3s);
+
+	.grid-sizer,
+	.grid-item { 
+		width: 31.3333%; 
+	  @include breakpoint(md) {
+	  	width: 48%;
+		}
+	}
+	.grid-item{
+		margin-bottom:1%;
+		@include transition-duration(.3s);
+	}
+	.gutter-sizer { width: 1%; }
+}
+
+
+
+.masonry-grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}

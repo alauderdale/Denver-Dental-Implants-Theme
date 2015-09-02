@@ -1,0 +1,161 @@
+// Units
+
+$baseline: 24px;
+$base-border-radius: 3px;
+
+* {
+	// position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+}
+
+body{
+  padding-top: 80px;
+  @include breakpoint(sm) {
+    padding-top: 74px;
+  }
+  font: 100%;
+  font-size:16px;
+  color: $text-color;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+  width:100%;
+  line-height: 1.5em;
+  height:100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  zoom:1;
+  font-family:'gotham-bookgotham-book', Helvetica, Arial, sans-serif;
+  background-color:$off-white-bg-color;
+  position: relative;
+}
+
+.main{
+  background-color:white;
+}
+
+hr {
+  border-color:$border-color;
+  margin-top:$baseline*2;
+  margin-bottom:$baseline*2;
+}
+
+
+// Clearing
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+
+img{
+	height:auto;
+}
+
+//backgrounds
+
+.bg-cover{
+  background-repeat: no-repeat;
+  background-attatchment:scroll; 
+  background-position-x:center;
+  background-position-y:top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}  
+
+//display
+
+.base-line-height{
+    line-height:$baseline;
+}
+
+.small-line-height{
+    line-height:18px;
+}
+
+.full-width{
+    width:100%;
+}
+
+.max-width{
+    max-width:100%;
+}
+
+.display-block{
+    display:block;
+}
+
+.inline-block{
+    display:inline-block;
+}
+
+.inline{
+    display:inline;
+}
+
+//borders
+.border-top{
+  border-top:1px solid $border-color;
+}
+.border-right{
+  border-right:1px solid $border-color;
+}
+.border-bottom{
+  border-bottom:1px solid $border-color;
+}
+.border-left{
+  border-left:1px solid $border-color;
+}
+
+//dividers
+
+.divider-default{
+  width:100px;
+  height:4px;
+  background-color:#f2f2f2;
+  display:inline-block;
+  text-align:center;
+  margin:$baseline auto;
+}
+
+.divider-sm{
+  width:60px;
+  height:3px;
+  background-color:$yellow-color;
+  display:inline-block;
+  text-align:center;
+  margin:$baseline/2 auto;
+}
+
+//icons
+
+.icon-circle{
+  color:$light-gray-color;
+  padding:10px 10px;
+  border:1px solid $border-color;
+  border-radius:100px;
+  font-size:1.5em;
+    @include breakpoint(md) {
+      margin-bottom:$baseline/2;
+    }
+}
+
+
+img{
+  max-width: 100%;
+}
+
+

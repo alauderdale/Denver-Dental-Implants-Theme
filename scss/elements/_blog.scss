@@ -1,0 +1,47 @@
+
+.social-btn-group{
+	position:relative;
+	right:10px;
+  @include breakpoint(md) {
+  	right:0;
+  }
+	.btn{
+		box-shadow:0 0 20px rgba(0,0,0,.15);
+		border:none;
+		font-family:$social-font-name;
+		font-size:1.5em;
+		padding:$baseline/2 $baseline/1.5;
+		&:first-of-type{
+			border-top-right-radius:3px!important;
+			border-top-left-radius:3px!important;
+		}
+		&:last-of-type{
+			border-bottom-right-radius:3px!important;
+			border-bottom-left-radius:3px!important;
+		}
+		&:hover{
+			background:$primary-color;
+			color:white;
+		}
+	}
+}
+
+.fix-social{
+	&.affix{
+		position:fixed!important;
+		top:120px;
+	}
+	.share-text{
+		text-align:left;
+	}
+  @include breakpoint(md) {
+    position:relative;
+    .share-text{
+			text-align:left;
+		}
+    &.affix{
+    	position:relative!important;
+			top:0px;
+		}
+  }
+}

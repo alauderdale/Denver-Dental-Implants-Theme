@@ -1,0 +1,78 @@
+///conditionsl classes
+
+//md
+
+.text-center-md{
+
+  @include breakpoint(md) {
+    text-align:center;
+  }
+
+}
+
+.text-center-sm{
+
+  @include breakpoint(sm) {
+    text-align:center;
+  }
+
+}
+
+.no-padding-md{
+
+  @include breakpoint(md) {
+    padding:0!important;
+  }
+
+}
+
+.btn-block-md{
+    @include breakpoint(md) {
+      display:block;
+      width: 100%;
+    }
+}
+
+.no-padding-right-md{
+
+  @include breakpoint(md) {
+    padding-right:0!important;
+  }
+
+}
+
+
+.margin-auto-md{
+  @include breakpoint(md) {
+    margin:0 auto;
+  }  
+}
+
+
+//sm
+
+.no-padding-left-sm{
+  @include breakpoint(sm) {
+    padding-left:0!important;
+  }  
+}
+
+
+.text-center-sm{
+  @include breakpoint(sm) {
+      text-align:center;
+    }
+}
+
+.no-margin-bottom-sm{
+  @include breakpoint(sm) {
+      margin-bottom:0;
+    }
+}
+
+.margin-bottom-sm{
+  margin-bottom:0;
+  @include breakpoint(sm) {
+      margin-bottom:24px;
+    }
+}

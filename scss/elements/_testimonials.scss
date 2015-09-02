@@ -1,0 +1,17 @@
+.testimonial-grid{
+	.testimonial{
+		background:white;
+		border:1px solid #eee;
+		padding:$baseline;
+		@include transition-duration(.2s);
+		&:hover{
+			box-shadow:0 0 30px rgba(0,0,0,.15);
+		}
+	}
+	.grid-sizer,
+	.grid-item { 
+	  @include breakpoint(sm) {
+	  	width: 100%;
+		}
+	}
+}

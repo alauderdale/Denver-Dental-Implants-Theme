@@ -1,0 +1,60 @@
+//remove firefox outlines
+a:focus, a:active, 
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: 0;
+    outline : 0;
+}
+
+
+a{
+	color:$primary-color;
+	text-decoration:none;
+	outline:none;
+	&:active, &:focus{
+		color:$primary-color;
+		text-decoration:none;
+	}
+	&:hover{
+		color:tint($primary-color,50%);
+		text-decoration:none;
+	}
+}
+
+
+.btn{
+	font-size:.7em;
+	text-transform:uppercase;
+	font-family:$medium-font-name;
+	border-radius:3px;
+	box-shadow:0 5px 10px 0 rgba(0,0,0,.10);
+	@include transition-duration(.2s);
+	&.btn-primary{
+		color:$primary-color;
+		background:white;
+		border:none;
+		padding:$baseline/1.5 $baseline*1.5;
+		&:hover{
+			background:#fafafa;
+		}
+	}
+	&.btn-default{
+		color:$primary-color;
+		background:white;
+		border:none;
+		padding:$baseline/1.5 $baseline*1.5;
+		box-shadow:none;
+		border:1px solid $primary-color;
+		&:hover{
+			background:#fafafa;
+		}
+	}
+	&:active{
+		box-shadow:none;
+	}
+}
+

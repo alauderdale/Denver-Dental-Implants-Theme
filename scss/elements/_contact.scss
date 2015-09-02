@@ -1,0 +1,76 @@
+.google-map{
+	width: 100%; 
+	overflow: hidden; 
+	height: 594px;
+	margin-top:-594px;
+	iframe{
+		margin-top:-150px;
+		pointer-events: none;
+	}
+}
+
+
+section.contact-form{
+  background:$primary-color url(../images/contact_form_bg.png) center center scroll no-repeat;
+  @include background-size(cover);
+
+
+  select{
+  	-webkit-appearance: none; /* gets rid of default appearance in Webkit browsers*/
+    -moz-appearance: none; /* Get rid of default appearance for older Firefox browsers */
+    -ms-appearance: none; /* get rid of default appearance for IE8, 9 and 10*/
+    appearance: none;
+    font-size: 1em;
+    line-height:1.2em;
+	overflow: hidden;
+    background: url(../images/arrow.png) no-repeat right transparent !important;
+
+  }
+
+}
+
+section.contact-map-container{
+	height:594px;
+	background:$primary-color;
+}
+
+
+.map-show{
+	.card,h1{
+		display:none;
+	}
+	.google-map{
+		iframe{
+			margin-top:0!important;
+			pointer-events: auto;
+		}
+	}
+}
+
+/*contact 7*/
+
+
+span.wpcf7-not-valid-tip{
+	font-size: 0.8em;
+	top: -6px;
+    position: relative;
+    color:white;
+}
+
+div.wpcf7-validation-errors{
+	display:inline-block;
+	@extend .alert;
+	@extend .alert-warning;
+	font-size: 0.8em;
+	margin: 0 0 10px 0;
+	width: 100%;
+}
+
+div.wpcf7-mail-sent-ok{
+	display:inline-block;
+	@extend .alert;
+	@extend .alert-success;
+	font-size: 0.8em;
+	margin: 0 0 10px 0;
+	width: 100%;
+}

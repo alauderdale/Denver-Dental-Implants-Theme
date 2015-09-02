@@ -1,0 +1,51 @@
+//sections
+
+
+section{
+  padding:$baseline*3 0;
+  background:white;
+  &.hero{
+  	  padding:60px 0;
+  }
+  &.invert-section{
+    background-color:$primary-color;
+    @extend %white_text;
+    ::-webkit-input-placeholder {
+       color: white;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+       color: white;  
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: white;  
+    }
+
+    :-ms-input-placeholder {  
+       color: white;  
+    }
+    form{
+      input, textarea, select{
+        background:rgba(255,255,255,.1);
+        border-color:rgba(255,255,255,.5);
+        color:white;
+      }
+      select{
+        color:white;
+      }
+    }
+  }
+  &.off-white{
+    background-color:$off-white-bg-color;
+  }
+  &.sign-up{
+    background:$primary-color url(../images/sign_up_bg.png) center center scroll no-repeat;
+    @include background-size(cover);
+    display:inline-block;
+    width:100%;
+  }
+}
+
+
+

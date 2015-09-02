@@ -1,0 +1,8 @@
+ul{
+	margin-left:$baseline;
+	margin-bottom:$baseline*1.5;
+	color:shade($body-text-color,20%);
+	&.list-centered{
+		display:inline-block;
+	}
+}

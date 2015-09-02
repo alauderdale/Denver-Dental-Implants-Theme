@@ -1,0 +1,40 @@
+footer{
+	&.global-footer{
+		display:inline-block;
+		width: 100%;
+		a{
+			color:$gray-color;
+		}
+		section{
+					background-color:$off-white-bg-color;
+		}
+		p{
+			font-size:.8em;
+			color:$gray-color;
+		}
+		h5{
+			font-size:.7em;
+			margin-bottom:$baseline/4;
+		}
+		ul.footer-links{
+			margin:0;
+			li{
+				font-size:.8em;
+				margin-bottom:4px;
+				a{
+					color:$gray-color;
+					&:hover{
+						color:$primary-color;
+					}
+				}
+			}
+			ul.menu-social{
+				margin-top:$baseline/2;
+				li{
+					font-size:1.3em;	
+				}
+
+			}
+		}
+	}
+}

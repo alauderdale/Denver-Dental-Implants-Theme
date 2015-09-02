@@ -1,0 +1,19 @@
+.wiki-content{
+	ul,ol{
+		margin-left: 24px;
+		margin-bottom:24px;
+		li{
+			font-size: 1em;
+			line-height:1.6em;
+			margin-bottom:5px;
+			color: $dark-gray-color;
+			ul{
+				list-style-type:disc;
+				margin-bottom:0;
+			}
+		}
+	}
+	img{
+		padding: 10px;
+	}
+}

@@ -1,0 +1,40 @@
+Backend changes required:
+
+NOTE: set up all custom post types before importing custom fields
+
+- create primary menus - company & patients
+
+- add:
+
+[Menu class]
+type = text
+size = 80
+
+to social network links custom post options
+
+add instagram to social networks 
+
+
+install ACF plugin
+
+
+update homepage / blog settings
+
+update about us content
+
+add emails for employees
+add featured images for employees
+
+transfer affiliations for Dr. Thurman
+
+Fill out contact form
+
+add contact form 7 plugin
+
+update smile gallery page
+
+add smile galllery taxenomies
+
+-
+
+set up banner image custom post type and fields

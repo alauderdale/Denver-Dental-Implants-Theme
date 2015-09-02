@@ -1,0 +1,341 @@
+// typography baselines and @font face setups
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+@font-face {
+    font-family: 'socialicoregular';
+    src: url('fonts/socialico-webfont.eot');
+    src: url('fonts/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/socialico-webfont.woff') format('woff'),
+         url('fonts/socialico-webfont.ttf') format('truetype'),
+         url('fonts/socialico-webfont.svg#socialicoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'gotham-boldgotham-bold';
+    src: url('fonts/gothmbol-webfont.eot');
+    src: url('fonts/gothmbol-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gothmbol-webfont.woff2') format('woff2'),
+         url('fonts/gothmbol-webfont.woff') format('woff'),
+         url('fonts/gothmbol-webfont.ttf') format('truetype'),
+         url('fonts/gothmbol-webfont.svg#gotham-boldgotham-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'gotham-bookgotham-book';
+    src: url('fonts/gothmbok-webfont.eot');
+    src: url('fonts/gothmbok-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gothmbok-webfont.woff2') format('woff2'),
+         url('fonts/gothmbok-webfont.woff') format('woff'),
+         url('fonts/gothmbok-webfont.ttf') format('truetype'),
+         url('fonts/gothmbok-webfont.svg#gotham-bookgotham-book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gotham-lightgotham-light';
+    src: url('fonts/gothmlig-webfont.eot');
+    src: url('fonts/gothmlig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gothmlig-webfont.woff2') format('woff2'),
+         url('fonts/gothmlig-webfont.woff') format('woff'),
+         url('fonts/gothmlig-webfont.ttf') format('truetype'),
+         url('fonts/gothmlig-webfont.svg#gotham-lightgotham-light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gotham-mediumgotham-medium';
+    src: url('fonts/gothmmed-webfont.eot');
+    src: url('fonts/gothmmed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gothmmed-webfont.woff2') format('woff2'),
+         url('fonts/gothmmed-webfont.woff') format('woff'),
+         url('fonts/gothmmed-webfont.ttf') format('truetype'),
+         url('fonts/gothmmed-webfont.svg#gotham-mediumgotham-medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gotham-thingotham-thin';
+    src: url('fonts/gothmthi-webfont.eot');
+    src: url('fonts/gothmthi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gothmthi-webfont.woff2') format('woff2'),
+         url('fonts/gothmthi-webfont.woff') format('woff'),
+         url('fonts/gothmthi-webfont.ttf') format('truetype'),
+         url('fonts/gothmthi-webfont.svg#gotham-thingotham-thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
+// font vars
+
+$thin-font-name:'gotham-thingotham-thin', Helvetica, Arial, sans-serif;
+$light-font-name:'gotham-lightgotham-light', Helvetica, Arial, sans-serif;
+$regular-font-name:'gotham-bookgotham-book', Helvetica, Arial, sans-serif;
+$medium-font-name:'gotham-mediumgotham-medium', Helvetica, Arial, sans-serif;
+$bold-font-name:'gotham-boldgotham-bold', Helvetica, Arial, sans-serif;
+// $flourish-font-name: 'brandon_grotesque_regularRg';
+// $flourish-font-name-light: 'brandon_grotesquelight';
+// $flourish-font-name-bold: 'brandon_grotesquebold';
+$social-font-name: 'socialicoregular';
+
+
+//text columns
+
+
+$text-column-gutter-width: $baseline;
+
+.text-columns-2{
+  @include columns($text-column-gutter-width 2);
+}
+.text-columns-3{
+  @include columns($text-column-gutter-width 3);
+}
+.text-columns-4{
+  @include columns($text-column-gutter-width 4);
+}
+
+.text-uppercase{
+  text-transform:uppercase;
+}
+
+
+
+
+//fonts families
+
+.thin-font-name{
+    font-family:$thin-font-name;
+}
+
+.light-font-name{
+    font-family:$light-font-name;
+}
+.regular-font-name{
+    font-family:$regular-font-name;
+}
+.medium-font-name{
+    font-family:$medium-font-name;
+}
+.bold-font-name{
+    font-family:$bold-font-name!important;
+}
+
+.social-font-name{
+    font-family:$social-font-name!important;
+}
+
+
+//fonts color
+
+.primary-text-color{
+  color:$primary-color!important;
+  p{
+    color:$primary-color!important;
+  }
+}
+
+.secondary-text-color{
+  color:$secondary-color!important;
+  p{
+    color:$secondary-color!important;
+  }
+}
+
+.body-text-color{
+  color:$body-text-color!important;
+}
+
+.text-color{
+  color:$text-color!important;
+}
+
+.extra-light-text-color{
+  color:$light-gray-color!important;
+}
+
+.dark-text-color{
+  color:$dark-text-color;
+}
+
+.text-success{
+  color:$green-color;
+}
+
+.text-warning{
+  color:$warning-color;
+}
+
+.link-color{
+  color:$link-color;
+}
+
+.white-text{
+  h1,h2,h3,h4,h5,h6,p,small,li{
+    color:white!important;
+  }
+}
+
+//fonts size
+
+.micro-text{
+  font-size:.7em;
+}
+
+
+//fonts base
+
+
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
+  font-weight: inherit; 
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin:0;
+  margin-bottom:$baseline; 
+}
+
+
+p{
+  small{
+    display:inline-block;
+    line-height:1.6em;
+  }
+  &.lead{
+    font-size:1.2em;
+    line-height:1.6em;
+  }
+}
+
+
+p  {font-size: 1em;  }
+h1 { font-size: 3.9em; }
+h2 { font-size: 2em; }
+h3 { font-size: 2em;}
+h4 { font-size: 1.4em; }
+h5 { font-size: .9em; }
+h6 { font-size: .8em;}
+
+
+
+h1{
+  font-family:$thin-font-name;
+  line-height:1.2em;
+  color:$dark-text-color;
+}
+
+h2{
+  font-family:$thin-font-name;
+  line-height:1.2em;
+  color:$dark-text-color;
+}
+
+h3{
+  font-family:$regular-font-name;
+  line-height:1.3em;
+}
+
+h4{
+  font-family:$light-font-name;
+  line-height:1.4em;
+}
+
+h5{
+  font-family:$bold-font-name;
+  text-transform:uppercase;
+  letter-spacing:1.7pt;
+  line-height:1.6em;
+}
+
+h6{
+  font-family:$regular-font-name;
+  line-height:1.3em;
+}
+
+
+
+p{
+  color:$body-text-color;
+  line-height:1.7em;
+}
+
+.heading-bordered{
+  padding-bottom:18px;
+  margin-bottom:$baseline*1.2;
+  position:relative;
+  &:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 32px;
+    height: 2px;
+    margin: auto;
+    background: #eaebed;
+  }
+  &.heading-bordered-left{
+    &:before{
+       right:auto;   
+    }
+  }
+}
+
+
+
+
+
+.line-through{
+  text-decoration:line-through;
+}
+
+blockquote{
+  font-family:$thin-font-name;
+  font-size:1.3em;
+  line-height:1.5em;
+  border:none;
+  padding-left:0;
+  color:$dark-text-color;
+  footer{
+    margin-top:$baseline;
+    font-family:$regular-font-name;
+  }
+}
+
+
+
+
+
+
+
+
+

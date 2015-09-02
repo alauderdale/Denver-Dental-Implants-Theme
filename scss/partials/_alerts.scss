@@ -1,0 +1,10 @@
+.alert{
+	&.alert-info{
+		background:white;
+		border:1px solid $primary-color;
+		p{
+			font-size:.9em;
+			color:$dark-text-color;
+		}
+	}
+}
