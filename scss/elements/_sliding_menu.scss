@@ -99,6 +99,9 @@ nav.sliding-menu {
                 &:hover{
                     color:$primary-color;
                 }
+                svg{
+                fill:$gray-color!important;
+                }
             }
         }
     }

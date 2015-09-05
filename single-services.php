@@ -2,9 +2,9 @@
 
 <style type="text/css">
 	
-li#menu-item-3669 a{
-	color:#85C342;
-	border-left:3px solid #85C342;
+li#menu-item-3672 a{
+	color:#f09241;
+	border-left:3px solid #f09241;
 }
 
 </style>

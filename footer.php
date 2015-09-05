@@ -60,10 +60,19 @@
 
 
                             <li>
+                              <?php
+                              $cc = get_the_content();
+                              if($cc != '') { ?>
                               <a style="color:<?php the_field("icon_color") ?> ; " target="_blank" href="<?php echo $sociallink ?>">
-                                <i class="fa <?php echo $menuclass ?> ">
-                                </i>
+                                <?php the_content(); ?>
                               </a>
+                              <?php } else { ?>
+
+                              <a style="color:<?php the_field("icon_color") ?> ; " target="_blank" href="<?php echo $sociallink ?>">
+                              <i class="fa <?php echo $menuclass ?> ">
+                              </i>
+                              </a>
+<?php } ?>
                             </li>
 
                             <?php
@@ -89,12 +98,12 @@
               <div class='ro1'>
                 <div class='col-lg-12'>
                   <p class='text-center margin-top'>
-                    Dental Elements | 1781 15th Street, Denver, CO 80202
+                    Denver Dental Implants | 1781 15th Street, Denver, CO 80202
                     <br>
-                    303-309-4093
+                    303-945-3483
                     |
-                    <a href='mailto:smile@dentalelements.com'>
-                      smile@dentalelements.com
+                    <a href='mailto:info@denverdentalimplants.com'>
+                      info@denverdentalimplants.com
                     </a>
                   </p>
                 </div>

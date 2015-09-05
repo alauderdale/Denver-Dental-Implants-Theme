@@ -12,13 +12,11 @@ Template Name: Home
   <div class='container'>
     <div class='col-lg-12'>
       <h1>
-        We Create
+        Restore your smile.
         <br>
         <span class='light-font-name'>
-          Beautiful Smiles.
+          And your confidence.
         </span>
-        <br>
-        For life.
       </h1>
       <a class='btn btn-primary' href='<?php the_field('smile_gallery_link');?>'>
         VIEW OUR SMILE GALLERY
@@ -69,7 +67,7 @@ Template Name: Home
     <div class='row'>
       <div class='col-md-6 col-md-push-6'>
         <div class='padded no-padding-bottom'>
-          <img class='img-responsive margin-auto-md' src='<?php the_field('testimonial_graphic');?>' style='position:relative; top:-30px;'>
+          <img width="323px" class='img-responsive margin-auto-md' src='<?php the_field('testimonial_graphic');?>' style='position:relative; top:-30px;'>
         </div>
       </div>
       <div class='col-md-6 col-md-pull-6'>

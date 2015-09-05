@@ -96,8 +96,15 @@
 							$menuclass = get_post_meta($post->ID, 'Menu class', true);
 							if($post->post_title == 'Blog Feed') $target = '_self';
 							if ($socialenabled == "Enabled"){
+
+							$cc = get_the_content();
+							if($cc != '') { 
+							 echo '<li><a target="'.$target.'" href="' . $sociallink . '">' . $cc . '</a></li>';
+							} else {
 							echo '<li><a target="'.$target.'" href="' . $sociallink . '"><i class="fa ' . $menuclass . ' "></i></a></li>';
 							}
+							}
+
 						endwhile;
 						// Reset Post Data
 						wp_reset_postdata();
@@ -105,7 +112,7 @@
 	      </ul>
 	    </p>
 	    <p>
-	      Dental Elements
+	      Denver Dental Implants
 	      <br>
 	      1781 15th Street
 	      <br>
@@ -114,8 +121,8 @@
 	    <p>
 	      303-309-4093
 	      <br>
-	      <a href='mailto:smile@dentalelements.com'>
-	        smile@dentalelements.com
+	      <a href='mailto:info@denverdentalimplants.com'>
+	        info@denverdentalimplants.com
 	      </a>
 	    </p>
 	  </div>

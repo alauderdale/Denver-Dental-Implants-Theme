@@ -5,7 +5,7 @@
       <h3 class='quarter-margin-bottom'>
         We are ready 
         <br/>
-        to make you smile.
+        to restore your smile.
       </h3>
     </div>
     <div class='col-lg-2 col-sm-1'></div>
